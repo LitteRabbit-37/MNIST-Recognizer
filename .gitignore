@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Saved models
+backend/saved_model/*
+!backend/saved_model/.gitkeep
+
+# Virtual environments
+venv/
+.env/
+
+# Others
+.DS_Store

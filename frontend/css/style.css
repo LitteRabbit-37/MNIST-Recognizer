@@ -1,5 +1,18 @@
+:root {
+    --bg: hsl(0, 0%, 13%);
+    --bg-light: hsl(0, 0%, 20%);
+    --bg-dark: hsl(0, 0%, 0%);
+    --highlight: hsl(60, 100%, 50%);
+    --highlight-dark: hsl(60, 100%, 30%);
+    --text: hsl(0, 0%, 100%);
+    --text-muted: hsl(0, 0%, 80%);
+    --danger: hsl(3, 100%, 58%);
+    --danger-dark: hsla(3, 100%, 58%, 0.204);
+    --danger-dark-hover: hsla(3, 100%, 58%, 0.322);
+}
+
 body {
-    background-color: #111;
+    background-color: var(--bg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,8 +32,8 @@ header {
 .github-button {
     font-family: Inter, sans-serif;
     cursor: pointer;
-    background: #000000;
-    color: #ffffff;
+    background: var(--bg-dark);
+    color: var(--text);
     border: none;
     padding: 12px 25px;
     font-size: 16px;
@@ -41,7 +54,7 @@ header {
 }
 
 .github-button:hover .icon {
-    fill: #ffff00;
+    fill: var(--highlight);
     scale: 1.1;
     rotate: 360deg;
     filter: drop-shadow(0 0 5px rgba(255, 208, 0, 0.8)) drop-shadow(0 0 10px rgba(255, 208, 0, 0.6));
@@ -85,8 +98,8 @@ header {
 .square {
     width: 20px;
     height: 20px;
-    background-color: #333;
-    border: 1px solid #111;
+    background-color: var(--bg-light);
+    border: 1px solid var(--bg);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -99,7 +112,7 @@ header {
     height: 34px;
     width: 112px;
     border: none;
-    background: #ff362b34;
+    background: var(--danger-dark);
     border-radius: 20px;
     cursor: pointer;
 }
@@ -107,12 +120,12 @@ header {
 .lable {
     line-height: 20px;
     font-size: 17px;
-    color: #ff342b;
+    color: var(--danger);
     letter-spacing: 1px;
 }
 
 .reset-button:hover {
-    background: #ff362b52;
+    background: var(--danger-dark-hover);
 }
 
 .reset-button:hover .svg-icon {
