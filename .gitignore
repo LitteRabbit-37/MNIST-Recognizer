@@ -1,16 +1,53 @@
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
 
-# Saved models
-backend/saved_model/*
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model weights
+backend/saved_model/*.pkl
 !backend/saved_model/.gitkeep
 
-# Virtual environments
-venv/
-.env/
+# Dataset cache
+backend/.cache/
+backend/datasets/
 
-# Others
-.DS_Store
+# Logs
+*.log
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Test outputs
+test_output/
+temp/
+/tmp/
+
+# Distribution
+*.egg-info/
+dist/
+build/
